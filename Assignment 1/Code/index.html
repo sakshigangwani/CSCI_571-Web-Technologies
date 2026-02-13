@@ -5,24 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Finder</title>
-    <link rel="stylesheet" href="../Code/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>🍽 Recipe Finder</h1>
-        <p class="subtitle">Search for delicious recipes around the world!</p>
+        <h1>Recipe Finder</h1>
+        <p>Search for delicious recipes from around the world</p>
 
-        <div class="search-section">
+        <div class="search-box">
             <input type="text" id="searchInput" placeholder="Enter a meal name (e.g., Chicken, Pasta, Arrabiata)" />
-            <button id="search-btn">Search</button>
+            <button id="searchBtn">Search</button>
         </div>
+
+        <p id="errorMessage" class="error hidden"></p>
+        <div id="loading" class="hidden">Searching for recipes...</div>
 
         <div id="resultsSection">
             <h2>Search Results</h2>
-            <div id="results" class="results-grid"></div>
+            <div id="resultsGrid" class="grid"></div>
+            <p id="noResults">No recipes found. Try a different search term.</p>
         </div>
+
+        <div id="detailSection" class="hidden"></div>
     </div>
+    <script src="js/app.js"></script>
 </body>
-    <script src="../Code/js/app.js"></script>
+
 </html>

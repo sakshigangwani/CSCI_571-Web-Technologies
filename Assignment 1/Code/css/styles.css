@@ -1,63 +1,113 @@
-* {
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #5f9cff, #7b4dd8);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    display: flex;
-    justify-content: center;
-    padding: 40px;
 }
 
 .container {
-    background-color: #fff;
-    width: 900px;
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
+    background: white;
+    width: 60%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
 }
 
 h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    text-align: center;
+    font-size: 32px;
 }
 
-.subtitle {
-    margin-bottom: 30px;
-    color: grey;
+p {
+    font-size: 18px;
+    color: gray;
+    text-align: center;
 }
 
-.search-section {
+.search-box {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 15px;
 }
 
-.search-section input {
+#searchInput {
     width: 400px;
     padding: 12px;
     border-radius: 6px;
     border: 1px solid #ccc;
 }
 
-.search-section button {
+.search-box button {
     padding: 12px 20px;
     border-radius: 6px;
     border: none;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background: linear-gradient(to right, #5f9cff, #7b4dd8);
     color: white;
     cursor: pointer;
 }
 
-.search-section button:hover {
+.search-box button:hover {
     opacity: 0.9;
 }
 
+.hidden {
+    display: none;
+}
+
 h2 {
-    margin-top: 30px;
-    font-size: 27px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 26px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.detail {
+  display: flex;
+  gap: 30px;
+}
+
+.detail img {
+  width: 400px;
+  border-radius: 12px;
+}
+
+.ingredients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.back-btn {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#loading {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+    margin-top: 20px;
 }
